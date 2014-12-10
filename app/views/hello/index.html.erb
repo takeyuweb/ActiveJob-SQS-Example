@@ -1,0 +1,10 @@
+<h1>Hello#index</h1>
+<% if flash.notice.present? %>
+    <p><%= flash.notice %></p>
+<% end %>
+
+<%= form_tag action: :world, method: :post do %>
+    Hello,
+    <%= text_field_tag :message, 'ActiveJob' %>
+    <%= submit_tag 'World!!' %>
+<% end %>

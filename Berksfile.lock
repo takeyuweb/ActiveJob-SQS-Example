@@ -1,0 +1,17 @@
+DEPENDENCIES
+  mysql
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+
+GRAPH
+  java (1.29.0)
+  mysql (5.6.1)
+    yum-mysql-community (>= 0.0.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  ruby_build (0.8.0)
+  yum (3.5.1)
+  yum-mysql-community (0.1.10)
+    yum (>= 3.0)
