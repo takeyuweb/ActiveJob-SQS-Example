@@ -4,7 +4,12 @@
 <% end %>
 
 <%= form_tag action: :world, method: :post do %>
-    Hello,
-    <%= text_field_tag :message, 'ActiveJob' %>
-    <%= submit_tag 'World!!' %>
+    <div>
+        Hello,
+        <%= text_field_tag :message, 'ActiveJob' %>
+        <%= submit_tag 'World!!' %>
+    </div>
+    <div>
+        <label><%= check_box_tag :immediately %> immediately</label>
+    </div>
 <% end %>
